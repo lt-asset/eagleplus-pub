@@ -1,0 +1,3 @@
+docker pull lintan000/torchrec_test:latest
+docker run -ti -d --name eagleplus -v "$(pwd)":"/mnt/" --gpus all --network host lintan000/torchrec_test:latest /bin/bash
+docker exec -it eagleplus bash
